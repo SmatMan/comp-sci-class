@@ -6,8 +6,14 @@ namespace starting
     {
         static void Main(string[] args)
         {
-            int a = 5;
-            int b = 6;
+            int numberOne = 5; 
+            int numberTwo = 6;
+
+            Console.WriteLine($"The sum of {numberOne} and {numberTwo} is {numberOne + numberTwo}.");
+            Console.WriteLine($"The difference of {numberOne} and {numberTwo} is {numberOne - numberTwo}.");
+            Console.WriteLine($"The product of {numberOne} and {numberTwo} is {numberOne * numberTwo}.");
+            Console.WriteLine($"The quotient of {numberOne} and {numberTwo} is {numberOne / numberTwo}.");
+            Console.WriteLine($"The modulus of {numberOne} and {numberTwo} is {numberOne % numberTwo}.");
         }
     }
 }
