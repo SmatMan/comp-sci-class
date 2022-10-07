@@ -7,8 +7,8 @@ namespace starting
         static void Main(string[] args)
         {
             int numberOne = 5; 
-            int numberTwo = 6;
-
+            int numberTwo = 6;    
+                    
             Console.WriteLine($"The sum of {numberOne} and {numberTwo} is {numberOne + numberTwo}.");
             Console.WriteLine($"The difference of {numberOne} and {numberTwo} is {numberOne - numberTwo}.");
             Console.WriteLine($"The product of {numberOne} and {numberTwo} is {numberOne * numberTwo}.");
@@ -17,5 +17,3 @@ namespace starting
         }
     }
 }
-
-
