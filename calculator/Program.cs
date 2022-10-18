@@ -16,27 +16,25 @@ namespace ConsoleApp
             Console.Write("Operator?");
             string op = Console.ReadLine();
 
-            
-            if (op == "+")
-            {
-                answer = num1 + num2;
-            }
-            else if (op == "-")
-            {
-                answer = num1 - num2;
-            }
-            else if (op == "*")
-            {
-                answer = num1 * num2;
-            }
-            else if (op == "/")
-            {
-                answer = num1 / num2;
-            }
-            else
-            {
-                Console.WriteLine("Invalid operator");
-                answer = null;
+            switch (op) {
+                case "+":
+                    answer = num1 + num2;
+                    break;
+                case "-":
+                    answer = num1 - num2;
+                    break;
+                case "*":
+                    answer = num1 * num2;
+                    break;
+                case "/":
+                    answer = num1 / num2;
+                    break;
+                case "%":
+                    answer = num1 % num2;
+                    break;
+                default:
+                    answer = null;
+                    break;
             }
             
             Console.WriteLine($"{num1} {op} {num2} = {answer}");
