@@ -16,11 +16,8 @@ namespace ConsoleApp
             Console.WriteLine($"The area of a circle with radius {radius} is {area}.");
             Console.WriteLine($"The area of a circle with radius {radius2} is {area2}.");
 
-            int x=10, y=5;
-            Console.WriteLine(x > y);
-            Console.WriteLine(x < y);
-            Console.WriteLine(x = y);
-            Console.WriteLine(x == y);
+            double db1 = 1.8, db2 = 3.2;
+            
 
         }
     }
