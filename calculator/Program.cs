@@ -9,12 +9,12 @@ namespace ConsoleApp
             int ?answer;
             
             Console.Write("First Number?");
-            int num1 = Int32.Parse(Console.ReadLine());
+            int num1 = Int32.TryParse(Console.ReadLine(), out int tempNum1) ? tempNum1 : 0; // if num1 is not an int, set it to 0
             Console.Write("Second Number?");
-            int num2 = Int32.Parse(Console.ReadLine());
+            int num2 = Int32.TryParse(Console.ReadLine(), out int tempNum2) ? tempNum2 : 0; // if num2 is not an int, set it to 0
 
             Console.Write("Operator?");
-            string op = Console.ReadLine();
+            string ?op = Console.ReadLine();
 
             switch (op) {
                 case "+":
@@ -37,6 +37,7 @@ namespace ConsoleApp
                     break;
             }
             
+            answer = answer.HasValue ? answer.Value : 0;
             Console.WriteLine($"{num1} {op} {num2} = {answer}");
 
         }

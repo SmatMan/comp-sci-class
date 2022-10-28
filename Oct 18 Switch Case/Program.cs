@@ -7,7 +7,7 @@ namespace ConsoleApp
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter a number: ");
-            int num = 2;
+            int num = Int32.TryParse(Console.ReadLine(), out int tempNum) ? tempNum : 0; 
 
             switch (num)
             {
