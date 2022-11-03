@@ -47,7 +47,7 @@ namespace ConsoleApp {
                 Console.WriteLine($"\n{questions[i].question}");
                 for (int j = 0; j < 4; j++)
                 {
-                    Console.WriteLine($"{j+1} {questions[i].choices[j]}");
+                    Console.WriteLine($"{j+1}) {questions[i].choices[j]}");
                 }
                 Console.Write("Enter your answer: ");
                 string answer = Console.ReadLine();
