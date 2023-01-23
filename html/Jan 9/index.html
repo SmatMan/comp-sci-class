@@ -1,7 +1,12 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8">
     <style>
+        body {
+            background-color: lightblue;
+        }
         h1 {
             color: red;
         }
@@ -15,17 +20,24 @@
         }
 
         h4 {
-            color: yellow;
+            color: cyan;
         }
 
         p {
-            color: purple;
+            color: rgb(255, 255, 0);
         }
 
         .centre {
+            margin-top: 100px;
             text-align: center;
-            width: 100%;
             font-family: system-ui;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+        #em {
+            color: rgb(255, 0, 255);
         }
     </style>
 </head>
@@ -36,10 +48,17 @@
         <h2>This is an h2</h2>
         <h3>This is an h3</h3>
         <h4>This is an h4</h4>
-        <p>This is a paragraph tag
+        <p>This is a <strong>paragraph tag</strong>
             <br>
             This is a line break
         </p>
+        <p id="em">
+            <em>This is an emphasis</em>
+        </p>
+        
+        
+        <img class="square" src="square.png" alt="a square">
+        <h2>image ⬆</h2>
     </div>
 
 </body>
