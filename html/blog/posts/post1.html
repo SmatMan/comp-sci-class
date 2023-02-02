@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project: Blog</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .shortline {
+            /* width: 70%; */
+            margin-left: 0;
+        }
+
+        /* a {
+            color: white;
+        } */
+
+        a:hover {
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline;
+        }
+        .header {
+            font-size: 14px;
+            text-align: center;
+        }
+        .header a {
+            text-decoration: none;
+            padding: 14px 16px;
+            background-color: #333;
+            color: white;
+
+        }
+        .header .selectedPage {
+            background-color: darkgreen;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        .post {
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li>
+                <h1>arjun's blog</h1>
+            </li>
+            <br>
+            <li><a href="../index.html" class="">Home</a></li>
+            <li><a href="#post1" class="selectedPage">History of HTML</a></li>
+        </ul>
+        <br><br>
+        <hr class="shortline">
+    </div>
+    <div class="post">
+    <h1 id="post1">History of HTML</h2>
+    <h6>Posted on January 27, 2023</h6>
+    <p>HTML, a markup language, is the language used to make most of the websites
+        we all use on a daily basis, but how was this language created and how did it become so popular?
+        HTML was created by Tim Berners-Lee in 1990. He was working at CERN, the European Organization for Nuclear
+        Research, when he came up with the idea of the World Wide Web.
+        <br><br>In 1995, Berners-Lee wrote the first web browser and the first web server. These programs made it
+        possible to view web pages on the internet.
+        <br><br>In 1996, he published the first official version of HTML called HTML 1.0. In 1997, he published HTML
+        2.0, and in 1999, he published HTML 3.2.
+        <br><br>In 2000, he published HTML 4.0, and in 2006, he published HTML 5.0. HTML 5.0 was the first version of
+        HTML to be published as an official standard.
+        <br><br>Thanks to Berners-Lee and his team, we now have HTML and the Internet, which connect people from around
+        the world.
+        <br><br>If you'd like to learn more, <a
+            href="https://www.washington.edu/accesscomputing/webd2/student/unit1/module3/html_history.html">click
+            here</a>.
+
+    </p>
+    <img src="../img/html.jpg">
+</div>
+</body>
+
+</html>
